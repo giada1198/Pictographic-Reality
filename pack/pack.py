@@ -11,14 +11,15 @@ def pack(input_path, output_path):
                 full_path = '%s/%s' % (p, i)
                 with open(full_path) as f:
                     data = json.load(f)
-                    strokes = []
-                    for d in data:
-                        stroke = []
-                        for s in [0,1,3]:
-                            stroke.append(d[s])
-                        strokes.append(stroke)
-                    t = np.array(strokes, dtype='int16')
-                    output[var].append(t)
+                    if len(data) > 0:
+                        strokes = []
+                        for d in data:
+                            stroke = []
+                            for s in [0,1,3]:
+                                stroke.append(d[s])
+                            strokes.append(stroke)
+                        t = np.array(strokes, dtype='int16')
+                        output[var].append(t)
     p = output_path + '/' + 'output.npz'
     np.savez_compressed(p, test=output['test'], train=output['train'], valid=output['valid'])
     return True
