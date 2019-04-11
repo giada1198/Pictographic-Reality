@@ -21,3 +21,5 @@ Alternatively, goto [Official Website](https://nodejs.org/en/download/) to downl
 ```
 node server.js
 ```
+
+The server has to been launched before the canvas was oepned, or there might be a.
