@@ -8,13 +8,21 @@
 
 Paste that in a Terminal prompt. Goto [Official Website](https://brew.sh/) to get more information.
 
-### Install Node
+### Install Node.js and npm
 
 ```
 brew install node
 ```
 
 Alternatively, goto [Official Website](https://nodejs.org/en/download/) to download the installer.
+
+### Install Packages with Package.json file
+
+```
+npm install
+```
+
+Once you get all the dependencies, the environment has been settled down.
 
 ## Launch the Server
 
