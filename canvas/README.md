@@ -26,8 +26,10 @@ There are differnt ways to run a local server mentioned in [p5.js tutorial](http
 
 ## Launch the Canvas
 
+The canvas has to been launched while the server is runing, or your drawing would not be able to received and saved.
+
 ```
 browser-sync start --server -f -w
 ```
 
-The canvas has to been launched while the server is runing, or your drawing would not be able to received and saved.
+Press `[S]` to save your drawing or `[C]` to clear the canvas.
